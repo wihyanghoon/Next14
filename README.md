@@ -35,3 +35,19 @@
 * Dynamic Routes 
   * [id] 대괄호를 사용하여 동적 라우팅 가능
   * 컴포넌트에서 props로 url에 대한 정보를 받아 올 수 있음
+  
+* loading.tsx
+  * data fetch 중에 응답이 오기전까지 대신 보여질 ui 컴포넌트
+
+* promise all
+  * await은 비동기 작업을 하는 동안 기다리는 명령어
+  * await 동작시 후에 작성된 코드는 await이 종료될때 가지 기다림
+  * 따라서 promise all을 사용하여 병렬적으로 동작하게 만듬
+  
+* suspense
+  * suspense 를 사용하여 각각 컴포넌트 별로 fetch받아 오는것을 따로 병렬적으로 가능함
+  ```javascript
+  <Suspense fallback>
+  // fallback 속성에 fetch중에 나타날 컴포넌트를 render 할 수 있음
+  </Suspense>
+  ```
